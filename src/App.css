@@ -1,38 +1,114 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 60px; /* Set a height for the header */
+  background-color: #f8f9fa; /* Optional: Add a background color */
+  margin-bottom: 20px; /* Space between header and main content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header a {
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Make text bold */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+input {
+  width: 50%; /* Adjust this value as needed */
+  max-width: 600px; /* Optional: Set a max-width */
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the book cards */
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Fixed width for each book card */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px auto;
+}
+
+.bookshelf .book-card {
+  margin: 10px;
+}
+
+button {
+  background-color: red;
   color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-card h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.book-card p {
+  margin: 0 0 10px;
+}
+
+/* New styles for the search page header */
+.search-header {
+  display: flex;
+  justify-content: center; /* Center the heading and buttons */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between header and search bar */
+}
+
+.search-header h1 {
+  margin-right: 20px; /* Space between heading and buttons */
+}
+
+.search-header a {
+  text-decoration: none;
+}
+
+.search-header button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.search-header button:hover {
+  background-color: red; /* Darker shade on hover */
 }
