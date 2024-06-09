@@ -15,7 +15,7 @@ header {
 header a {
   margin: 0 15px; /* Space between links */
   text-decoration: none; /* Remove underline */
-  color: #007bff; /* Link color */
+  color: red; /* Link color */
   font-size: 18px; /* Increase font size */
   font-weight: bold; /* Make text bold */
 }
@@ -110,5 +110,35 @@ h1 {
 }
 
 .search-header button:hover {
+  background-color: red; /* Darker shade on hover */
+}
+
+/* Styles for the bookshelf header */
+.bookshelf-header {
+  display: flex;
+  justify-content: center; /* Center the heading and button */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between header and book cards */
+}
+
+.bookshelf-header h1 {
+  margin-right: 20px; /* Space between heading and button */
+}
+
+.bookshelf-header a {
+  text-decoration: none;
+}
+
+.bookshelf-header button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.bookshelf-header button:hover {
   background-color: red; /* Darker shade on hover */
 }
