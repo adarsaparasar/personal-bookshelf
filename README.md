@@ -72,8 +72,7 @@ This is a React application that allows users to search for books using the Open
 To deploy the application on a hosting platform like Netlify, follow these steps:
 
 * Build the Application
-  
-```bash
+  ```bash
       npm run build
 
 * Deploy the contents of the `build` folder to your chosen hosting platform.
